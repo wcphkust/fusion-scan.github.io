@@ -2,82 +2,103 @@
 
 <head>
 <title>Fusion and Pinpoint Scan - Static Analysis</title>
+<meta name="keywords" content="Qingkai Shi, QingkaiShi, Pinpoint, Fusion, Static Code Analysis, Static Code Analyzer, Program Analysis and Testing">
 </head>
 
 <BODY TEXT="#000000" BGCOLOR="#ffffff" LINK="#005bb7" VLINK="#005bb7">
-<p>
 <font face="helvetica">
 <center>
+<br>
 <h2>Fusion and Pinpoint Scan - Static Analysis</h2>
-<p>This is an incomplete list collecting a part of bugs reported by Fusion and Pinpoint Scan</p>
+<p>This is an incomplete list collecting a part of bugs reported by Fusion and Pinpoint Scan (Total: <b id='total'>200</b> Bugs)</p>
+<br>
+<a href="#" onclick="display('papers');">[Related Papers]</a> | 
+<a href="#" onclick="display('cves');">[CVE Identifiers]</a> | 
+<a href="#" onclick="display('bugs');">[Discovered Bugs]</a> 
 </center>
-<p>
 
+<div id="papers" style="display: none;">
 <br clear=all>
 <hr>
 <h3>Related Papers</h3>
 
-<ul style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
-	<li style="margin-bottom: 10px;"><a
-		href="https://pldi21.sigplan.org/home">PLDI'21</a>: <a
+<ul style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm; line-height: 140%">
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://2021.splashcon.org/track/splash-2021-oopsla">OOPSLA'21</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
+		href="/#">Indexing Context-Sensitive Reachability</a><br />
+		<a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Yongchao Wang, Charles Zhang<br />
+		The 36th ACM SIGPLAN Conference on Objected Oriented Programming, Systems, Languages, and Applications<br />
+	</li>
+	
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://2021.splashcon.org/track/splash-2021-oopsla">OOPSLA'21</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
+		href="/#">Program Analysis via Efficient Symbolic Abstraction</a><br />
+		Peisen Yao, <a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Heqing Huang, Charles Zhang<br />
+		The 36th ACM SIGPLAN Conference on Objected Oriented Programming, Systems, Languages, and Applications<br />
+	</li>
+	
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://pldi21.sigplan.org/home">PLDI'21</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
 		href="https://qingkaishi.github.io/public_pdfs/PLDI21-Fusion.pdf">Path-Sensitive Sparse Analysis without
 		Path Conditions</a><br />
-		Qingkai Shi, Peisen Yao, Rongxin Wu, Charles Zhang<br />
+		<a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Peisen Yao, Rongxin Wu, Charles Zhang<br />
 		The 42nd ACM SIGPLAN Conference on Programming Language Design and Implementation<br />
 	</li>
 	
-	<li style="margin-bottom: 10px;"><a
-		href="https://pldi21.sigplan.org/home">PLDI'21</a>: <a
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://pldi21.sigplan.org/home">PLDI'21</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
 		href="https://home.cse.ust.hk/~charlesz/canary.pdf">Canary: Practical Static Detection of Inter-Thread Value-Flow Bugs</a><br />
 		Yuandao Cai, Peisen Yao, and Charles Zhang<br />
 		The 42nd ACM SIGPLAN Conference on Programming Language Design and Implementation<br />
 	</li>
 
-	<li style="margin-bottom: 10px;"><a
-		href="https://conf.researchr.org/home/issta-2020">ISSTA'20</a>: <a
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://conf.researchr.org/home/issta-2020">ISSTA'20</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
 		href="https://qingkaishi.github.io/public_pdfs/ISSTA20-Trident.pdf">Fast Bit-Vector Satisfiability</a><br />
-		Peisen Yao, Qingkai Shi, Heqing Huang, Charles Zhang<br />
+		Peisen Yao, <a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Heqing Huang, Charles Zhang<br />
 		The 29th ACM SIGSOFT International Symposium on Software Testing and Analysis<br />
 	</li>
 	
-	<li style="margin-bottom: 10px;"><a
-		href="https://conf.researchr.org/home/icse-2020">ICSE'20</a>: <a
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://conf.researchr.org/home/icse-2020">ICSE'20</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
 		href="https://qingkaishi.github.io/public_pdfs/ICSE2020a.pdf">Pipelining Bottom-up Data Flow Analysis</a><br />
-		Qingkai Shi, Charles Zhang<br />
+		<a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Charles Zhang<br />
 		The 42nd ACM/IEEE International Conference on Software Engineering<br />
 	</li>
 
-	<li style="margin-bottom: 10px;"><a
-		href="https://conf.researchr.org/home/icse-2020">ICSE'20</a>: <a
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://conf.researchr.org/home/icse-2020">ICSE'20</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
 		href="https://qingkaishi.github.io/public_pdfs/ICSE2020b.pdf">Conquering the Extensional Scalability Problem
 		for Value-Flow Analysis Frameworks</a><br />
-		Qingkai Shi, Rongxin Wu, Gang Fan, Charles Zhang<br />
+		<a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Rongxin Wu, Gang Fan, Charles Zhang<br />
 		The 42nd ACM/IEEE International Conference on Software Engineering<br />
 	</li>
 
-	<li style="margin-bottom: 10px;"><a
-		href="https://conf.researchr.org/home/icse-2019">ICSE'19</a>: <a
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://conf.researchr.org/home/icse-2019">ICSE'19</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
 		href="https://qingkaishi.github.io/public_pdfs/ICSE2019.pdf">Smoke: Scalable Path-Sensitive Memory Leak
 		Detection for Millions of Lines of Code</a><br />
-		Gang Fan, Rongxin Wu, Qingkai Shi, Xiao Xiao, Jinguo Zhou, Charles Zhang<br />
+		Gang Fan, Rongxin Wu, <a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Xiao Xiao, Jinguo Zhou, Charles Zhang<br />
 		The 41st ACM/IEEE International Conference on Software Engineering<br />
 	</li>
 
-	<li style="margin-bottom: 10px;"><a
-		href="https://pldi18.sigplan.org/home">PLDI'18</a>: <a
+	<li style="margin-bottom: 10px;"><a style="text-decoration:none;font-weight:bold;color:black;"
+		href="https://pldi18.sigplan.org/home">PLDI'18</a>: <a style="text-decoration:none;font-weight:bold;color:black;"
 		href="https://qingkaishi.github.io/public_pdfs/PLDI2018.pdf">Pinpoint: Fast and Precise Sparse Value Flow
 		Analysis for Million Lines of Code</a><br />
-		Qingkai Shi, Xiao Xiao, Rongxin Wu, Jinguo Zhou, Gang Fan, Charles Zhang<br />
+		<a href="https://qingkaishi.github.io/">Qingkai Shi</a>, Xiao Xiao, Rongxin Wu, Jinguo Zhou, Gang Fan, Charles Zhang<br />
 		The 39th ACM SIGPLAN Conference on Programming Language Design and Implementation<br />
 	</li>
 </ul>
+</div>
 	
 <!--cve list-->
-<hr>
+<div id="cves" style="display: none;">
 <br clear=all>
+<hr>
 <h3>CVE List</h3>
 
-<ul style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm">
+<ul style="text-align:justify; text-justify:inter-ideograph; margin-right: 5mm; line-height: 140%">
 	<li><a
 	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14739">CVE-2017–14739</a>:
 	ImageMagick 7.0.7–4 mishandles failed memory allocation, which allows remote
@@ -125,17 +146,58 @@
 	In libjpeg-turbo 2.0.2, a large amount of memory can be used during processing
 	of an invalid progressive JPEG image containing incorrect width and height
 	values in the image header.</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19715">CVE-2020-19715</a>:
+	An integer overflow vulnerability in the getUShort function of Exiv2 0.27.1 results in segmentation faults within the application, leading to a denial of service (DOS).</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19716">CVE-2020-19716</a>:
+	A buffer overflow vulnerability in the Databuf function in types.cpp of Exiv2
+v0.27.1 leads to a denial of service (DOS).</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19717">CVE-2020-19717</a>:
+	An unhandled memory allocation failure in Core/Ap48bdlAtom.cpp of Bento 1.5.1-628 causes a NULL pointer dereference, leading to a denial of service (DOS).</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19718">CVE-2020-19718</a>:
+	An unhandled memory allocation failure in Core/Ap4Atom.cpp of Bento 1.5.1-628
+causes a NULL pointer dereference, leading to a denial of service (DOS).</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19719">CVE-2020-19719</a>:
+	A buffer overflow vulnerability in Ap4ElstAtom.cpp of Bento 1.5.1-628 leads to a
+denial of service (DOS).</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19720">CVE-2020-19720</a>:
+	An unhandled memory allocation failure in Core/AP4IkmsAtom.cpp of Bento
+1.5.1-628 causes a NULL pointer dereference, leading to a denial of service (DOS).</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19721">CVE-2020-19721</a>:
+	A heap buffer overflow vulnerability in Ap4TrunAtom.cpp of Bento 1.5.1-628 may
+lead to an out-of-bounds write while running mp42aac, leading to system crashes and a denial of
+service (DOS).</li>
+	
+	<li><a
+	href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19722">CVE-2020-19722</a>:
+	An unhandled memory allocation failure in Core/Ap4Atom.cpp of Bento 1.5.1-628
+causes a direct copy to NULL pointer dereference, leading to a denial of service (DOS).</li>
 </ul>
+</div>
 
 
 <!--confirmed bugs-->
-<hr>
+<div id="bugs" style="display: none;">
 <br clear=all>
-<h3>Bug List</h3>
+<hr>
+<h3 id="buglist">Bug List</h3>
 
 <ul style="list-style-type: none;" id="confirmed_UL">
 
-<li projname="amazon-s3" bugtype="362">
+<li style="display:none" projname="amazon-s3" bugtype="362">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/amazon-s3.png" width="150px"/>
 </div>
@@ -150,7 +212,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="apache" bugtype="562">
+<li style="display:none" projname="apache" bugtype="562">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/apache.png" width="150px"/>
 </div>
@@ -165,7 +227,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="apache" bugtype="562">
+<li style="display:none" projname="apache" bugtype="562">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/apache.png" width="150px"/>
 </div>
@@ -180,7 +242,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="axel" bugtype="362">
+<li style="display:none" projname="axel" bugtype="362">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 
 <img src="/static/axel.png" width="150px"/>
@@ -197,7 +259,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="baidu" bugtype="476">
+<li style="display:none" projname="baidu" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/baidu.png" width="150px"/>
 </div>
@@ -211,23 +273,8 @@
 </div>
 <br clear=all><br>
 </li>
-	
-<li projname="" bugtype="476">
-<div style="float: left; height: 150px; margin-right: 1cm;">
-<img src="https://jzautotest.com/wp-content/uploads/2020/08/ALIBABA-LOGO.png" width="150px"/>
-</div>
-<div style="width: 1000px">
-<a href="https://cwe.mitre.org/data/definitions/476.html">CWE-476: Null Pointer Dereference</a> |
-<a href="https://github.com/sofastack/sofa-rpc/issues/1048", target="_blank">Report Link</a>
-<br><br>
-<p>inconsistent operation on a pointer in alibaba's sofa-rpc.</p>
 
-<br><br>
-</div>
-<br clear=all><br>
-</li>
-
-<li projname="baidu" bugtype="362">
+<li style="display:none" projname="baidu" bugtype="362">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/baidu.png" width="150px"/>
 </div>
@@ -241,8 +288,23 @@
 </div>
 <br clear=all><br>
 </li>
+	
+<li style="display:none" projname="sofastack" bugtype="476">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="https://avatars.githubusercontent.com/u/36956638?s=200&v=4" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/476.html">CWE-476: Null Pointer Dereference</a> |
+<a href="https://github.com/sofastack/sofa-rpc/issues/1048", target="_blank">Report Link</a>
+<br><br>
+<p>inconsistent operation on a pointer in sofa-rpc.</p>
 
-<li projname="bento4" bugtype="121">
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="bento4" bugtype="121">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/bento4.jpg" width="150px"/>
 </div>
@@ -258,7 +320,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="bento4" bugtype="476">
+<li style="display:none" projname="bento4" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/bento4.jpg" width="150px"/>
 </div>
@@ -274,7 +336,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="bftpd" bugtype="401">
+<li style="display:none" projname="bftpd" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/bftpd.png" width="150px"/>
 </div>
@@ -290,7 +352,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="bftpd" bugtype="590">
+<li style="display:none" projname="bftpd" bugtype="590">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/bftpd.png" width="150px"/>
 </div>
@@ -305,7 +367,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="chromev8" bugtype="401">
+<li style="display:none" projname="chromev8" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/chromev8.png" width="150px"/>
 </div>
@@ -320,7 +382,7 @@
 <br clear=all><br>
 </li>
 
-<li projname="chromev8" bugtype="401">
+<li style="display:none" projname="chromev8" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/chromev8.png" width="150px"/>
 </div>
@@ -344,7 +406,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="cjson" bugtype="476">
+<li style="display:none" projname="cjson" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/cjson.png" width="150px"/>
 </div>
@@ -359,7 +421,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="eyescale" bugtype="362">
+<li style="display:none" projname="eyescale" bugtype="362">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/eyescale.png" width="150px"/>
 </div>
@@ -374,7 +436,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="fastjson" bugtype="476">
+<li style="display:none" projname="fastjson" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/fastjson.png" width="150px"/>
 </div>
@@ -389,7 +451,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="fastjson" bugtype="476">
+<li style="display:none" projname="fastjson" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/fastjson.png" width="150px"/>
 </div>
@@ -404,7 +466,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="ffmpeg" bugtype="401">
+<li style="display:none" projname="ffmpeg" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/ffmpeg.png" width="150px"/>
 </div>
@@ -419,7 +481,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="ffmpeg" bugtype="416">
+<li style="display:none" projname="ffmpeg" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/ffmpeg.png" width="150px"/>
 </div>
@@ -434,7 +496,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="ffmpeg" bugtype="416">
+<li style="display:none" projname="ffmpeg" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/ffmpeg.png" width="150px"/>
 </div>
@@ -449,7 +511,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="ffmpeg" bugtype="416">
+<li style="display:none" projname="ffmpeg" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/ffmpeg.png" width="150px"/>
 </div>
@@ -464,7 +526,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="firefox" bugtype="416">
+<li style="display:none" projname="firefox" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/firefox.png" width="150px"/>
 </div>
@@ -479,7 +541,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="firefox" bugtype="401">
+<li style="display:none" projname="firefox" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/firefox.png" width="150px"/>
 </div>
@@ -497,7 +559,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="firefox" bugtype="401">
+<li style="display:none" projname="firefox" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/firefox.png" width="150px"/>
 </div>
@@ -515,7 +577,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="firefox" bugtype="401">
+<li style="display:none" projname="firefox" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/firefox.png" width="150px"/>
 </div>
@@ -533,7 +595,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="firefox" bugtype="401">
+<li style="display:none" projname="firefox" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/firefox.png" width="150px"/>
 </div>
@@ -550,7 +612,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="firefox" bugtype="401">
+<li style="display:none" projname="firefox" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/firefox.png" width="150px"/>
 </div>
@@ -569,7 +631,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="firefox" bugtype="401">
+<li style="display:none" projname="firefox" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/firefox.png" width="150px"/>
 </div>
@@ -587,7 +649,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="glusterfs" bugtype="476">
+<li style="display:none" projname="glusterfs" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/glusterfs.png" width="150px"/>
 </div>
@@ -603,7 +665,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="glusterfs" bugtype="476">
+<li style="display:none" projname="glusterfs" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/glusterfs.png" width="150px"/>
 </div>
@@ -618,7 +680,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="goaccess" bugtype="416">
+<li style="display:none" projname="goaccess" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/goaccess.png" width="150px"/>
 </div>
@@ -633,7 +695,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="godot" bugtype="401">
+<li style="display:none" projname="godot" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/godot.png" width="150px"/>
 </div>
@@ -649,7 +711,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="godot" bugtype="401">
+<li style="display:none" projname="godot" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/godot.png" width="150px"/>
 </div>
@@ -665,7 +727,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="godot" bugtype="401">
+<li style="display:none" projname="godot" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/godot.png" width="150px"/>
 </div>
@@ -681,7 +743,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="godot" bugtype="401">
+<li style="display:none" projname="godot" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/godot.png" width="150px"/>
 </div>
@@ -697,7 +759,7 @@ freed. This adds a free() on those paths to prevent a memory leak.</p>
 <br clear=all><br>
 </li>
 
-<li projname="hbase" bugtype="476">
+<li style="display:none" projname="hbase" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/hbase.png" width="150px"/>
 </div>
@@ -723,7 +785,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="imagemagick" bugtype="476">
+<li style="display:none" projname="imagemagick" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/imagemagick.png" width="150px"/>
 </div>
@@ -738,7 +800,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="imagemagick" bugtype="476">
+<li style="display:none" projname="imagemagick" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/imagemagick.png" width="150px"/>
 </div>
@@ -754,7 +816,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="imagemagick" bugtype="476">
+<li style="display:none" projname="imagemagick" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/imagemagick.png" width="150px"/>
 </div>
@@ -770,7 +832,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="libdnet" bugtype="476">
+<li style="display:none" projname="libdnet" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/libdnet.png" width="150px"/>
 </div>
@@ -785,7 +847,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="libcork" bugtype="476">
+<li style="display:none" projname="libcork" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/libcork.png" width="150px"/>
 </div>
@@ -800,7 +862,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="libicu" bugtype="416">
+<li style="display:none" projname="libicu" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/libicu.png" width="150px"/>
 </div>
@@ -816,7 +878,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="libicu" bugtype="416">
+<li style="display:none" projname="libicu" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/libicu.png" width="150px"/>
 </div>
@@ -831,7 +893,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="libjpeg" bugtype="401">
+<li style="display:none" projname="libjpeg" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/libjpeg.png" width="150px"/>
 </div>
@@ -847,7 +909,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="libsass" bugtype="401">
+<li style="display:none" projname="libsass" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/libsass.png" width="150px"/>
 </div>
@@ -862,7 +924,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="libssh" bugtype="416">
+<li style="display:none" projname="libssh" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/libssh.png" width="150px"/>
 </div>
@@ -877,7 +939,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="memcached" bugtype="476">
+<li style="display:none" projname="memcached" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/memcached.png" width="150px"/>
 </div>
@@ -892,7 +954,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="memcached" bugtype="401">
+<li style="display:none" projname="memcached" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/memcached.png" width="150px"/>
 </div>
@@ -907,7 +969,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="memcached" bugtype="401">
+<li style="display:none" projname="memcached" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/memcached.png" width="150px"/>
 </div>
@@ -922,7 +984,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="mysql" bugtype="416">
+<li style="display:none" projname="mysql" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/mysql.png" width="150px"/>
 </div>
@@ -937,7 +999,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="mysql" bugtype="416">
+<li style="display:none" projname="mysql" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/mysql.png" width="150px"/>
 </div>
@@ -952,7 +1014,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="mysql" bugtype="416">
+<li style="display:none" projname="mysql" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/mysql.png" width="150px"/>
 </div>
@@ -967,7 +1029,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="mysql" bugtype="416">
+<li style="display:none" projname="mysql" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/mysql.png" width="150px"/>
 </div>
@@ -982,7 +1044,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="mysql" bugtype="401">
+<li style="display:none" projname="mysql" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/mysql.png" width="150px"/>
 </div>
@@ -997,7 +1059,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="mysql" bugtype="401">
+<li style="display:none" projname="mysql" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/mysql.png" width="150px"/>
 </div>
@@ -1015,7 +1077,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="openssl" bugtype="476">
+<li style="display:none" projname="openssl" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/openssl.png" width="150px"/>
 </div>
@@ -1030,7 +1092,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="openssl" bugtype="476">
+<li style="display:none" projname="openssl" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/openssl.png" width="150px"/>
 </div>
@@ -1045,7 +1107,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="openssl" bugtype="401">
+<li style="display:none" projname="openssl" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/openssl.png" width="150px"/>
 </div>
@@ -1060,7 +1122,7 @@ for (Cell kv : kvs) { ... }</p>
 <br clear=all><br>
 </li>
 
-<li projname="openssl" bugtype="401">
+<li style="display:none" projname="openssl" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/openssl.png" width="150px"/>
 </div>
@@ -1077,7 +1139,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="openssl" bugtype="401">
+<li style="display:none" projname="openssl" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/openssl.png" width="150px"/>
 </div>
@@ -1092,7 +1154,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="openssl" bugtype="476">
+<li style="display:none" projname="openssl" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/openssl.png" width="150px"/>
 </div>
@@ -1108,7 +1170,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="openssl" bugtype="416">
+<li style="display:none" projname="openssl" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/openssl.png" width="150px"/>
 </div>
@@ -1123,7 +1185,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="optee" bugtype="416">
+<li style="display:none" projname="optee" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/optee.png" width="150px"/>
 </div>
@@ -1138,7 +1200,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="optee" bugtype="401">
+<li style="display:none" projname="optee" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/optee.png" width="150px"/>
 </div>
@@ -1153,7 +1215,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="optee" bugtype="416">
+<li style="display:none" projname="optee" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/optee.png" width="150px"/>
 </div>
@@ -1168,7 +1230,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="optee" bugtype="416">
+<li style="display:none" projname="optee" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/optee.png" width="150px"/>
 </div>
@@ -1183,7 +1245,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="paddle" bugtype="562">
+<li style="display:none" projname="paddle" bugtype="562">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/paddle.png" width="150px"/>
 </div>
@@ -1198,7 +1260,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="paddle" bugtype="401">
+<li style="display:none" projname="paddle" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/paddle.png" width="150px"/>
 </div>
@@ -1213,7 +1275,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="python" bugtype="476">
+<li style="display:none" projname="python" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/python.png" width="150px"/>
 </div>
@@ -1228,7 +1290,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="python" bugtype="476">
+<li style="display:none" projname="python" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/python.png" width="150px"/>
 </div>
@@ -1243,7 +1305,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="python" bugtype="476">
+<li style="display:none" projname="python" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/python.png" width="150px"/>
 </div>
@@ -1258,7 +1320,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="python" bugtype="476">
+<li style="display:none" projname="python" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/python.png" width="150px"/>
 </div>
@@ -1273,7 +1335,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="redis" bugtype="476">
+<li style="display:none" projname="redis" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/redis.png" width="150px"/>
 </div>
@@ -1288,7 +1350,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="redis" bugtype="773">
+<li style="display:none" projname="redis" bugtype="773">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/redis.png" width="150px"/>
 </div>
@@ -1303,7 +1365,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="redis" bugtype="773">
+<li style="display:none" projname="redis" bugtype="773">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/redis.png" width="150px"/>
 </div>
@@ -1318,7 +1380,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="redis" bugtype="562">
+<li style="display:none" projname="redis" bugtype="562">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/redis.png" width="150px"/>
 </div>
@@ -1333,7 +1395,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="redis" bugtype="416">
+<li style="display:none" projname="redis" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/redis.png" width="150px"/>
 </div>
@@ -1348,7 +1410,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="redis" bugtype="121">
+<li style="display:none" projname="redis" bugtype="121">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/redis.png" width="150px"/>
 </div>
@@ -1363,7 +1425,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="shadowsocks" bugtype="121">
+<li style="display:none" projname="shadowsocks" bugtype="121">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/shadowsocks.png" width="150px"/>
 </div>
@@ -1378,7 +1440,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="shadowsocks" bugtype="416">
+<li style="display:none" projname="shadowsocks" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/shadowsocks.png" width="150px"/>
 </div>
@@ -1393,7 +1455,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="shadowsocks" bugtype="416">
+<li style="display:none" projname="shadowsocks" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/shadowsocks.png" width="150px"/>
 </div>
@@ -1408,7 +1470,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="shadowsocks" bugtype="476">
+<li style="display:none" projname="shadowsocks" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/shadowsocks.png" width="150px"/>
 </div>
@@ -1423,7 +1485,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="shadowsocks" bugtype="476">
+<li style="display:none" projname="shadowsocks" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/shadowsocks.png" width="150px"/>
 </div>
@@ -1438,7 +1500,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="shadowsocks" bugtype="476">
+<li style="display:none" projname="shadowsocks" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/shadowsocks.png" width="150px"/>
 </div>
@@ -1453,7 +1515,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="tengine" bugtype="476">
+<li style="display:none" projname="tengine" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/tengine.png" width="150px"/>
 </div>
@@ -1468,7 +1530,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="tensorflow" bugtype="476">
+<li style="display:none" projname="tensorflow" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/tensorflow.png" width="150px"/>
 </div>
@@ -1483,7 +1545,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="tmux" bugtype="401">
+<li style="display:none" projname="tmux" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/tmux.png" width="150px"/>
 </div>
@@ -1498,7 +1560,7 @@ This bug happens when the program taking true branch at line 4569 and goto the e
 <br clear=all><br>
 </li>
 
-<li projname="tmux" bugtype="401">
+<li style="display:none" projname="tmux" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/tmux.png" width="150px"/>
 </div>
@@ -1514,7 +1576,7 @@ Same problem as above in cmd-if-shell.c</p>
 <br clear=all><br>
 </li>
 
-<li projname="tmux" bugtype="401">
+<li style="display:none" projname="tmux" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/tmux.png" width="150px"/>
 </div>
@@ -1530,7 +1592,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="tmux" bugtype="401">
+<li style="display:none" projname="tmux" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/tmux.png" width="150px"/>
 </div>
@@ -1545,7 +1607,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="tmux" bugtype="476">
+<li style="display:none" projname="tmux" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/tmux.png" width="150px"/>
 </div>
@@ -1560,7 +1622,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="transmission" bugtype="416">
+<li style="display:none" projname="transmission" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/transmission.png" width="150px"/>
 </div>
@@ -1575,7 +1637,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="transmission" bugtype="476">
+<li style="display:none" projname="transmission" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/transmission.png" width="150px"/>
 </div>
@@ -1590,7 +1652,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="transmission" bugtype="401">
+<li style="display:none" projname="transmission" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/transmission.png" width="150px"/>
 </div>
@@ -1605,7 +1667,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="transmission" bugtype="401">
+<li style="display:none" projname="transmission" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/transmission.png" width="150px"/>
 </div>
@@ -1620,7 +1682,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="transmission" bugtype="401">
+<li style="display:none" projname="transmission" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/transmission.png" width="150px"/>
 </div>
@@ -1635,7 +1697,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="vim" bugtype="476">
+<li style="display:none" projname="vim" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/vim.png" width="150px"/>
 </div>
@@ -1651,7 +1713,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="vmware" bugtype="476">
+<li style="display:none" projname="vmware" bugtype="476">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/vmware.png" width="150px"/>
 </div>
@@ -1666,7 +1728,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="webassembly" bugtype="416">
+<li style="display:none" projname="webassembly" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/webassembly.png" width="150px"/>
 </div>
@@ -1681,7 +1743,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="webassembly" bugtype="773">
+<li style="display:none" projname="webassembly" bugtype="773">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/webassembly.png" width="150px"/>
 </div>
@@ -1696,7 +1758,7 @@ Similar problem</p>
 <br clear=all><br>
 </li>
 
-<li projname="wine" bugtype="401">
+<li style="display:none" projname="wine" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/wine.png" width="150px"/>
 </div>
@@ -1712,7 +1774,7 @@ We classify this one as confirmed since it has been confirmed by at least one de
 <br clear=all><br>
 </li>
 
-<li projname="wine" bugtype="401">
+<li style="display:none" projname="wine" bugtype="401">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/wine.png" width="150px"/>
 </div>
@@ -1728,7 +1790,7 @@ I've uploaded a screenshot of the leak trace.</p>
 <br clear=all><br>
 </li>
 
-<li projname="z3" bugtype="362">
+<li style="display:none" projname="z3" bugtype="362">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/z3.jpg" width="150px"/>
 </div>
@@ -1743,7 +1805,7 @@ I've uploaded a screenshot of the leak trace.</p>
 <br clear=all><br>
 </li>
 
-<li projname="sphinx" bugtype="416">
+<li style="display:none" projname="sphinx" bugtype="416">
 <div style="float: left; height: 150px; margin-right: 1cm;">
 <img src="/static/sphinx.png" width="150px"/>
 </div>
@@ -1758,54 +1820,345 @@ I've uploaded a screenshot of the leak trace.</p>
 <br clear=all><br>
 </li>
 
+<li style="display:none" projname="git" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/git.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://lore.kernel.org/git/YI1f0NesWZFqh9O2@coredump.intra.peff.net/T/#m81221758bb89fa0088a6697f5863242388490bc2", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in git controlled by command line argument</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="linux" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/linux.jpeg" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://lore.kernel.org/linux-parisc/alpine.DEB.2.22.394.2105121353530.1204552@ramsan.of.borg/T/#t", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in Linux kernel: pnmtologo.c</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="linux" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/linux.jpeg" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://lore.kernel.org/dri-devel/YJ00C%2FKdhe3bSrtH@kroah.com/T/#u", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in Linux kernel: agp</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="linux" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/linux.jpeg" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://lore.kernel.org/linux-block/21cb65d1-b91a-2627-3824-292de3a7553a@suse.de/T/#t", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in Linux kernel: block</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="linux" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/linux.jpeg" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://lore.kernel.org/lkml/CAM7=BFoH7Q+YHvPFnHM4j72ORHQp4gTjHFjnfeLsV2-30ZLNYw@mail.gmail.com/T/#t", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in Linux kernel: math</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="gdb" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/gdb.jpeg" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://sourceware.org/bugzilla/show_bug.cgi?id=27847", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in gdb: amd64_has_unaligned_fields</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="imagemagick" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/imagemagick.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://github.com/ImageMagick/ImageMagick/issues/3642", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in ImageMagick: OpenPixelCache</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="imagemagick" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/imagemagick.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://github.com/ImageMagick/ImageMagick/issues/3653", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in ImageMagick: GetVirtualPixelCacheNexus</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="goaccess" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/goaccess.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://github.com/allinurl/goaccess/issues/2106", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in goaccess: set_root_metrics</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="goaccess" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/goaccess.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://github.com/allinurl/goaccess/issues/2106", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in goaccess: add_data_to_holder</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="libuv" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/libuv.jpeg" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://github.com/libuv/libuv/pull/3166/commits/09fa971023e4139a9f4e6c3356959de01476a605", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in libuv: read_times</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="spring-boot" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/spring.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://github.com/spring-projects/spring-boot/issues/26628", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in sping-boot: RandomValuePropertySource</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="hadoop" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/hadoop.jpeg" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/369.html">CWE-369: Divide By Zero</a> |
+<a href="https://github.com/apache/hadoop/pull/3048", target="_blank">Report Link</a>
+<br><br>
+<p>Divide by zero in hadoop: LoadBalancingKMSClientProvider</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+
+<li style="display:none" projname="hadoop" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/mercury.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/667.html">CWE-667: Improper Locking</a> |
+<a href="https://github.com/mercury-hpc/mercury/issues/495", target="_blank">Report Link</a>
+<br><br>
+<p>An improper locking bug on hg_thread_mutex_lock(&NA_MPI_CLASS(na_class)->accept_mutex) in mercury. Multiple calls on the function na_mpi_accept can lead to a deadlock. </p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+<li style="display:none" projname="hadoop" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/mercury.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/667.html">CWE-667: Improper Locking</a> |
+<a href="https://github.com/mercury-hpc/mercury/issues/495", target="_blank">Report Link</a>
+<br><br>
+<p>An improper locking bug on hg_thread_mutex_lock(&NA_MPI_CLASS(na_class)->remote_list_mutex) in mercury. Multiple calls on the function na_mpi_progress_unexpected can lead to a deadlock.</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+
+
+<li style="display:none" projname="hadoop" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/mercury.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/667.html">CWE-667: Improper Locking</a> |
+<a href="https://github.com/mercury-hpc/mercury/issues/495", target="_blank">Report Link</a>
+<br><br>
+<p>An improper locking bug on  hg_thread_mutex_lock(&request->request_class->progress_mutex) in mercury. Multiple calls on the function hg_request_wait can lead to a deadlock.</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+
+<li style="display:none" projname="hadoop" bugtype="369">
+<div style="float: left; height: 150px; margin-right: 1cm;">
+<img src="/static/mercury.png" width="150px"/>
+</div>
+<div style="width: 1000px">
+<a href="https://cwe.mitre.org/data/definitions/667.html">CWE-667: Improper Locking</a> |
+<a href="https://github.com/mercury-hpc/mercury/issues/495", target="_blank">Report Link</a>
+<br><br>
+<p>An improper locking bug on hg_thread_mutex_lock(&poll_set->lock) in mercury. Multiple calls on the function hg_poll_wait can lead to a deadlock.</p>
+
+<br><br>
+</div>
+<br clear=all><br>
+</li>
+
+
+
 </ul>
+<center id="pagination">
+<!--pagination-->
+</center>
+</div>
+	
+<br clear=all><br>
+<hr>
+<center>
+    <p style="font-size:small">Maintained by <a href="https://qingkaishi.github.io/">Qingkai Shi</a> </p>
+    <a href="https://clustrmaps.com/site/1bimn"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=ZFRO6BdR3crTvmRtYZMbceCPBizTMuTv3kk6q2U6pzo&cl=ffffff" /></a>
+</center>
 
 <script>
-function filter_confirmed_bugs() {
-var bt = document.getElementById("filter_bug_type");
-var bt_user = bt.options[bt.selectedIndex].value;
+// count items
+var ul = document.getElementById('confirmed_UL');
+var i = 0, itemCount = 0;
+var allItems = ul.getElementsByTagName('li');
+var allItemsArray = [];
+while(allItems[i++]) { itemCount++; allItemsArray.push(allItems[i - 1]); }
+var total = document.getElementById("total");
+total.textContent = itemCount;
 
-var pn = document.getElementById("filter_project_name");
-var pn_user = pn.options[pn.selectedIndex].value;
+// sort items
+allItemsArray.sort(function(a, b) {
+    var projA = a.getAttribute('projname');
+    var projB = b.getAttribute('projname');
+    return (projA < projB) ? -1 : (projA > projB) ? 1 : 0;
+});
+ul.innerHTML = ''
+for (i = 0; i < itemCount; i++) {
+	ul.appendChild(allItemsArray[i]);
+}
+allItems = ul.getElementsByTagName('li');
 
-var ul = document.getElementById("confirmed_UL");
-var li = ul.getElementsByTagName("li");
-var i;
-for (i = 0; i < li.length; i++) {
-if ((bt_user == "ALL" || li[i].getAttribute("bugtype") == bt_user)
-&& (pn_user == "ALL" || li[i].getAttribute("projname") == pn_user)) {
-li[i].style.display = "";
-} else {
-li[i].style.display = "none";
-}
-}
+// pagination
+function goPage(pageNo) {
+    var startIdx = (pageNo - 1) * 15;
+    for (i = 0; i < itemCount; i++) {
+        if (i >= startIdx && i < startIdx + 15) {
+            allItems[i].style.display = ""
+        } else {
+            allItems[i].style.display = "none"
+        }
+    }
+
+    var pp = document.getElementById("pagination");
+    var totalPages = Math.ceil(itemCount / 15);
+    pp.innerHTML = ''
+    for (i = 1; i < totalPages + 1; i++) {
+        var suffix = ' | '
+        if (i == totalPages) {
+            suffix = ''
+        }
+
+        if (pageNo == i) {
+            pp.innerHTML += i + suffix
+        } else {
+            pp.innerHTML += '<a href=\'#\' onclick=\'goPage(' + i + ');\'>' + i + '</a>' + suffix
+        }
+    }
 }
 
-function show_or_hide_list(ulid, imgid) {
-var ul = document.getElementById(ulid);
-if (ul.style.display == "none") {
-ul.style.display = ""
-} else {
-ul.style.display = "none"
-}
+goPage(1);
+	
+var lis = ['papers', 'cves', 'bugs'];
+function display(id) {
+	var li = document.getElementById(id);
+    li.style.display = "block";
 
-var img = document.getElementById(imgid);
-if (img.getAttribute("src") == "/static/down.png") {
-img.setAttribute("src", "/static/right.png")
-} else {
-img.setAttribute("src", "/static/down.png")
+	for (i = 0; i < lis.length; ++i) {
+		if (lis[i] != id) {
+			var li = document.getElementById(lis[i]);
+			li.style.display = "none";
+		}
+	}
 }
-}
-
-function countItems(listID){
-var ul = document.getElementById(listID);
-var i=0, itemCount =0;
-while(ul.getElementsByTagName('li') [i++]) itemCount++;
-document.write(itemCount);
-}
-
+display('papers');
 </script>
-
-<b>Total: <script> countItems('confirmed_UL')</script> confirmed reports.</b>
 </BODY>
 </html>
